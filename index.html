@@ -9,70 +9,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="leftside">
-        <img src="halie-west-25xggax4bSA-unsplash.jpg">
-        <div id="banner">
-            <img src="odin-lined.png">
-            <p>Odin</p>
+
+    <div class="left-container">
+        <!--<img src="halie-west-25xggax4bSA-unsplash.jpg" id="picture">-->
+        <div class="title">
+            <img src="odin-lined.png" alt="odin logo">
+            <h1 class="norse-font">Odin</h1>
         </div>
-        <div id="license">
-            Photo by Haile West on Unsplash
-        </div>
+        <p>
+        Photo by 
+        <a href="https://unsplash.com/@hailewestphoto" class="pic-link">Haile West</a>
+        on Unsplash
+        </p>
     </div>
 
-    <div class="rightside">
-        <div id="header">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+    <div class="right-container">
+            <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                 <br/>
                 Sign up <em>now</em> to get started
                 <br />
                 <br />
                 You <em>know</em> you want to.
             </p>
-        </div>
-<form id="signup" action="#" method="post">
-    <fieldset>
-        <p>Lets do this!</p>
-            <div class="formleft">
-
-                <div>
-                <label for="firstname">First Name</label>
-                <input id="username" type="text" name="username" />
-                </div>
-
-                <div>
-                <label for="email">Email</label>
-                <input id="email" type="text" name="email" />
-                </div>
-
-
-                <div>
-                <label for="password">Password</label>
-                <input id="password" type="password" required/>
-                </div>
-
+<div class="form-container">
+    <form action="post">
+        <fieldset>
+          <p>Let's do this!</p>
+          <div class="form-row">
+            
+            <!-- Left Column -->
+            <div class="column">
+              <label for="firstname">First Name</label>
+              <input id="firstname" type="text" name="firstname" />
+      
+              <label for="email">Email</label>
+              <input id="email" type="text" name="email" />
+      
+              <label for="password">Password</label>
+              <input id="password" type="password" required />
             </div>
-
-            <div class="formright">
-
-                <div>
-                <label for="lastname">Last Name</label>
-                <input id="lastname" type="text" />
-                </div>
-
-                <div>
-                <label for="phonenumber">Phone Number</label>
-                <input id="phonenumber" type="text" name="phonenumber" />
-                </div>
-
-                <div>
-                <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="password" required />
-                </div>
-
+      
+            <!-- Right Column -->
+            <div class="column">
+              <label for="lastname">Last Name</label>
+              <input id="lastname" type="text" name="lastname" />
+      
+              <label for="phonenumber">Phone Number</label>
+              <input id="phonenumber" type="text" name="phonenumber" />
+      
+              <label for="confirm-password">Confirm Password</label>
+              <input id="confirm-password" type="password" required />
             </div>
+          </div>
         </fieldset>
-    </form>
+      </form>
+</div>
 
     <section class="actions">
     <button type="submit" form="signup">Create Account</button>
