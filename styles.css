@@ -1,0 +1,155 @@
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white-font: #ffffff;
+    --button-color: #596D48;
+    --background-color: #f8fafc;
+    --form-border: #E5E7EB;
+}
+
+@font-face {
+    font-family: norse-font;
+    src: url("Norse-Bold.otf");
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    height: 100vh;
+    width: 40%;
+    position: relative;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-container p{
+    color: var(--white-font);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.title {
+    color: var(--white-font);
+    font-family: norse-font, monospace;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 3rem;
+    margin-top: 25%;
+}
+
+.title img{
+    height: 150px;
+    width: auto;
+}
+
+.right-container{
+    background-color: var(--background-color);
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-container > * {
+    padding: 20px 50px;
+}
+
+.right-container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+  form {
+    max-width: 700px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-family: sans-serif;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  .form-container > p {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .actions > p{
+    font-size: 1.2em;
+    font-weight: 100;
+    padding-top: 20px
+  }
+  
+  input {
+    border: 1px solid var(--form-border);
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+}
+  input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+  }
+
+  input:invalid {
+    border: 1px solid red;
+  }
+  
